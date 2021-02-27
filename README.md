@@ -16,4 +16,4 @@ pip install -r requirements.txt
 ## System Environment Variable
 **Add the path of chromedriver.exe to system environment variables in local Path.**  
 ## Run
-    python joker.py yourusername yourpassword
+    python refresher.py yourusername yourpassword
