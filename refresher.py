@@ -13,12 +13,15 @@ while(True):
     #Password
     kbu_password = sys.argv[2]
 
+    #html element 
     element1 = driver.find_element_by_name("Username")
     element1.send_keys(kbu_email)
 
+    #html element
     element2 = driver.find_element_by_name("Password")
     element2.send_keys(kbu_password)
-
+    
+    #finding html element according to its class
     login = driver.find_element_by_xpath("//button[@class='btn btn-primary btn-block btn-lg']").click()
 
     time.sleep(60) # time between login and logout (60secs)
